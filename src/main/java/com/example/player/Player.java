@@ -46,4 +46,3 @@ public class Player{
         return this.role;
     }
 }
-https://github.com/Vickyviki027/Player-Spring-Boot.git
