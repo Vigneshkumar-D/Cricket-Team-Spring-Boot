@@ -14,35 +14,34 @@ public class Player{
         this.role = role;
     }
 
-    public void setPlayerId(int playerId){
-        this.playerId = playerId;
-    }
-
     public int getPlayerId(){
         return this.playerId;
     }
 
-    public void setName(String playerName){
-        this.playerName = playerName;
+    public void setPlayerId(int playerId){
+        this.playerId = playerId;
     }
 
-    public String getName(){
+    public String getPlayerName(){
         return this.playerName;
     }
-
-    public void setJerseyNumber(int jerseyNumber){
-        this.jerseyNumber = jerseyNumber;
+    public void setPlayerName(String playerName){
+        this.playerName = playerName;
     }
-
+     
     public int getJerseyNumber(){
         return this.jerseyNumber;
+    }
+        
+    public void setJerseyNumber(int jerseyNumber){
+        this.jerseyNumber = jerseyNumber;
+    }   
+    public String getRole(){
+        return this.role;
     }
 
     public void setRole(String role){
         this.role = role;
-    }
-
-    public String getRole(){
-        return this.role;
-    }
+    }    
 }
+

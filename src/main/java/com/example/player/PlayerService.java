@@ -1,4 +1,5 @@
 package com.example.player;
+
 import org.springframework.web.server.ResponseStatusException;
 import org.springframework.http.HttpStatus;
 
@@ -60,8 +61,8 @@ public class PlayerService implements PlayerRepository {
         if(existingPlayer == null){
             throw new ResponseStatusException(HttpStatus.NOT_FOUND);
         }
-        if(player.getName() != null){
-            existingPlayer.setName(player.getName());
+        if(player.getPlayerName() != null){
+            existingPlayer.setPlayerName(player.getPlayerName());
         }
         if(player.getJerseyNumber() != 0){
             existingPlayer.setJerseyNumber(player.getJerseyNumber());
@@ -84,4 +85,3 @@ public class PlayerService implements PlayerRepository {
     }
 
 }
-
